@@ -1,13 +1,13 @@
 {
-  "name": "drips-subgraph-mainnet-v2",
+  "name": "radicle-drips-optimism-kovan-v0",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ drips-subgraph-mainnet-v2",
-    "create-local": "graph create --node http://localhost:8020/ drips-subgraph-mainnet-v2",
-    "remove-local": "graph remove --node http://localhost:8020/ drips-subgraph-mainnet-v2",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 drips-subgraph-mainnet-v2"
+    "deploy": "graph deploy --product hosted-service codesandwich/radicle-drips-optimism-kovan-v0",
+    "create-local": "graph create --node http://localhost:8020/ codesandwich/radicle-drips-optimism-kovan-v0",
+    "remove-local": "graph remove --node http://localhost:8020/ codesandwich/radicle-drips-optimism-kovan-v0",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 codesandwich/radicle-drips-optimism-kovan-v0"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.22.0",

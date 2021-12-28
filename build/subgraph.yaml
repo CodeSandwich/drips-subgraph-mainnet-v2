@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: RadicleRegistry
-    network: mainnet
+    network: optimism-kovan
     source:
-      address: "0x40e9340BE9326b2e026fDBEfe775F1515939bD46"
+      address: "0x2be26e0311B7c54b1c89Daf3B8269B2BcBb77eB0"
       abi: RadicleRegistry
-      startBlock: 8774325
+      startBlock: 735051
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -26,11 +26,11 @@ dataSources:
       file: RadicleRegistry/RadicleRegistry.wasm
   - kind: ethereum/contract
     name: DaiDripsHub
-    network: mainnet
+    network: optimism-kovan
     source:
-      address: "0x73043143e0a6418cc45d82d4505b096b802fd365"
+      address: "0x1B17603598e212faAc2407Fae4beD2EbD60Bdd9F"
       abi: DaiDripsHub
-      startBlock: 8774325
+      startBlock: 735034
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -49,7 +49,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: DripsToken
-    network: mainnet
+    network: optimism-kovan
     source:
       abi: DripsToken
     mapping:
