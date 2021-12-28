@@ -34,7 +34,7 @@ type Token @entity {
 }
 
 type Drip @entity {
-  id: ID! # 
+  id: ID! # user + "-" + receiver
   user: Bytes! # address
   receiver: Bytes! # address
   amtPerSec: BigInt!
