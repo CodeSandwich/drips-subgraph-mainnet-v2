@@ -90,6 +90,7 @@ function checkDripsConfigExists(id: string): void {
   }
 }
 
+/*
 export function handleSplitsUpdated(event: SplitsUpdated): void {
   let splitsConfigId = event.params.user.toHex()
   let splitsConfig = SplitsConfig.load(splitsConfigId)
@@ -106,17 +107,17 @@ export function handleSplitsUpdated(event: SplitsUpdated): void {
       var receiver = event.params.receivers[i]
       if (receiver) {
         if (receiver.receiver) {
-          splitsConfig.receiverAddresses.push(receiver.receiver)
+          //splitsConfig.receiverAddresses.push(receiver.receiver)
         }
         if (receiver.weight) {
-          splitsConfig.receiverPercentages.push(receiver.weight)
+          //splitsConfig.receiverPercentages.push(receiver.weight)
         }
       }
     }
   }
   
   splitsConfig.save()
-}
+}*/
 
 export function handleDripsUpdated(event: DripsUpdated): void {
   let id = event.params.user.toHex()

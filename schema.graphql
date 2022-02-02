@@ -53,8 +53,3 @@ type DripsEntry @entity {
   endTime: BigInt!
 }
 
-type SplitsConfig @entity {
-  id: ID! # user
-  receiverAddresses: [Bytes!]!
-  receiverPercentages: [BigInt!]!
-}

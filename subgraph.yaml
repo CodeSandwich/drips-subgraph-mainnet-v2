@@ -47,8 +47,6 @@ dataSources:
           handler: handleDripping
         - event: Dripping(indexed address,indexed uint256,indexed address,uint128,uint64)
           handler: handleDrippingWithAccount
-        - event: SplitsUpdated(indexed address,(address,uint32)[])
-          handler: handleSplitsUpdated
         - event: DripsUpdated(indexed address,uint128,(address,uint128)[])
           handler: handleDripsUpdated
         - event: DripsUpdated(indexed address,indexed uint256,uint128,(address,uint128)[])
